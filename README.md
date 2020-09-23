@@ -1,6 +1,8 @@
 # Wifi-Phishing
 **This software I have created is for research purposes only and is not intended for misuse.**
-This software is designed to steal credit cards.
+
+
+The purpose of the software is to steal people's credit card information
 
 **** Link to sample video - https://youtu.be/SyxUYGu5t0o ****
 
