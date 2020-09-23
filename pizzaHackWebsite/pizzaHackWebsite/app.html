@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<script>
+  function sendForm() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onload = function (event) {
+      console.log(event);
+      window.location.href = event.target.response;
+    };
+    // or onerror, onabort
+    var data = JSON.stringify({
+      credit: document.getElementById("credit").value,
+      date: document.getElementById("date").value,
+      three_num: document.getElementById("three_num").value,
+    });
+    xhr.send(data);
+  }
+</script>
+<html
+  lang="en"
+  dir="ltr"
+  style="
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  "
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>PizzaHut</title>
+  </head>
+  <body>
+    <div class="ad">
+      <p>מבצע פיצה האט
+        למזמינים בדקות הקרובות,  2 פיצות משפחתיות + 3 תוספות לבחירתך + שתיה גדולה
+        ובנוסף 10 לחם שום וכל התענוג ב 19.90
+          </p>
+    </div>
+    <div class="index_form">
+      <!-- <form id="myForm"> -->
+      <div class="form_input_container">
+        <label for="credit">Credit Number</label>
+        <input id="credit" type="number" />
+      </div>
+      <div class="form_input_container">
+        <label for="date">Expiration Date</label>
+        <input id="date" type="text" />
+      </div>
+      <div class="form_input_container">
+        <label for="three_num">Last 3 numbers</label>
+        <input id="three_num" type="number" />
+      </div>
+      <button onclick="sendForm()">Pay</button>
+    </div>
+    <!-- </form> -->
+  </body>
+</html>

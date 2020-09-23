@@ -1,0 +1,50 @@
+.ad {
+  background: #e1e1e1cf;
+  width: 20%;
+  position: absolute;
+  border-radius: 6px;
+  left: 16px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.index_form {
+  position: relative;
+  font-family: sans-serif;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  background: #ffffff3b;
+  padding: 3rem;
+  border-radius: 7px;
+}
+.index_form button {
+  background: #00000063;
+  border: 1px solid white;
+  height: 40px;
+  width: 80%;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 5px;
+  left: 52px;
+  cursor: pointer;
+}
+.index_form button:hover {
+  background: #28282899;
+}
+
+.index_form .form_input_container {
+  display: grid;
+  margin: 10px;
+}
+.index_form .form_input_container label {
+  color: white;
+}
+
+.index_form .form_input_container input {
+  border: 1px solid white;
+  background: transparent;
+  height: 30px;
+  border-radius: 4px;
+}
